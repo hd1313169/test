@@ -1,4 +1,102 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<!-- 導覽列 -->
+<nav class="navbar navbar-expand-lg p-40 pe-xl-160" id="nav">
+    <div class="container-fluid">
+      <div class="w-100 d-flex justify-content-between align-items-center">
+        <!-- logo -->
+        <a href="./index.html" class="logo">
+          <h1 class="ff-oto text-primary">Pin-Ru <br>
+            Lin</h1>
+        </a>
+
+        <!-- 電腦版導覽列 -->
+        <div class="navbar-desktop">
+          <ul class="navbar-nav mb-lg-0 justify-content-center mx-auto">
+            <li class="nav-item me-lg-32">
+              <a class="nav-link fs-20 text-primary" href="#about">關於我<span class="fs-14 ff-pap ms-16">about</span>
+                <div class="underline mt-8"></div>
+              </a>
+            </li>
+            <li class="nav-item me-lg-16">
+              <a class="nav-link fs-20 text-primary" href="#skills">技能<span class="fs-14 ff-pap ms-16">skills</span>
+                <div class="underline mt-8"></div>
+              </a>
+            </li>
+            <li class="nav-item me-lg-32">
+              <a class="nav-link fs-20 text-primary" href="#exp">經歷<span class="fs-14 ff-pap ms-16">experience</span>
+                <div class="underline mt-8"></div>
+              </a>
+            </li>
+            <li class="nav-item me-lg-32">
+              <a class="nav-link fs-20 text-primary" href="#portfolio">作品分享<span
+                  class="fs-14 ff-pap ms-16">portfolio</span>
+                <div class="underline mt-8"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-20 text-primary" href="#contact">聯絡我<span class="fs-14 ff-pap ms-16">contact</span>
+                <div class="underline mt-8"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- 電腦版導覽列END -->
+
+        <!-- 行動版導覽列 -->
+        <!-- 選單按鈕 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="material-symbols-outlined fs-24 text-primary">
+            drag_handle
+          </span>
+        </button>
+
+        <!-- 展開選單 -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- 關閉選單按鈕 -->
+          <div class="offcanvas-header justify-content-end pt-40 pe-40">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!-- 選單列表 -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 ps-60">
+              <li class="nav-item me-lg-32">
+                <a class="nav-link fs-20 text-primary" href="./index.html#about">關於我<span class="fs-14 ff-pap ms-16">about</span>
+                  <div class="underline mt-8"></div>
+                </a>
+              </li>
+              <li class="nav-item me-lg-16">
+                <a class="nav-link fs-20 text-primary" href="./index.html#skills">技能<span class="fs-14 ff-pap ms-16">skills</span>
+                  <div class="underline mt-8"></div>
+                </a>
+              </li>
+              <li class="nav-item me-lg-32">
+                <a class="nav-link fs-20 text-primary" href="./index.html#exp">經歷<span class="fs-14 ff-pap ms-16">experience</span>
+                  <div class="underline mt-8"></div>
+                </a>
+              </li>
+              <li class="nav-item me-lg-32">
+                <a class="nav-link fs-20 text-primary" href="./index.html#portfolio">作品分享<span
+                    class="fs-14 ff-pap ms-16">portfolio</span>
+                  <div class="underline mt-8"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-20 text-primary" href="#contact">聯絡我<span
+                    class="fs-14 ff-pap ms-16">contact</span>
+                  <div class="underline mt-8"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 展開選單END -->
+        <!-- 行動版導覽列END -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- 導覽列END -->
+
+  <a href="#nav" class="side-btn d-block position-fixed">
+    <div class="main-img"></div>
+  </a>

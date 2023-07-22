@@ -1,3 +1,75 @@
-.index-title {
-  font-size: 100px;
+.img {
+  width: 100%;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.deer {
+  width: 320px;
+  height: 320px;
+  background-image: url(https://github.com/hd1313169/lin/blob/main/app/assets/images/deer.png?raw=true);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.contact-img {
+width: 100%;  
+height: auto;
+}
+
+.timeline {
+  z-index: 998;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    z-index: 999;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: $dark;
+    border-radius: 100px;
+  }
+}
+
+.deer-pop {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 116px;
+  height: 116px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card:hover{
+  .deer-pop{
+    display: block;
+  }
+}
+
+.portfolio-img{
+  width: 160px;
+  height: 160px;
+  background-image: url(https://github.com/hd1313169/lin/blob/main/app/assets/images/girl-2.png?raw=true);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-width: 992px) {
+    width: 100%;
+    height: 240px;
+  }
 }

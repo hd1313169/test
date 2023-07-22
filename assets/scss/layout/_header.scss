@@ -1,4 +1,119 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+body {
+  position: relative;
+}
+
+.ff-oto {
+  font-family: "otomanopee-one", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ff-pap {
+  font-family: 'Paprika', cursive;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  letter-spacing: 4px;
+  line-height: 1.5;
+}
+
+.lh-2 {
+  line-height: 2;
+}
+
+.nav {
+  color: $primary;
+}
+
+.navbar-desktop {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: block;
+  }
+}
+
+.nav-link {
+  .underline {
+    visibility: hidden;
+    width: 136px;
+    height: 6px;
+    background-image: url(https://github.com/hd1313169/lin/blob/main/app/assets/images/underline.png?raw=true);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    color: $secondary !important;
+
+    .underline {
+      visibility: visible !important;
+    }
+  }
+
+}
+
+.offcanvas {
+  width: 80%;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.navbar-toggler {
+  display: block;
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+
+h1{
+  display: block;
+  &:hover {
+    color: $secondary !important;
+  }
+}
+
+.side-btn {
+  width: 160px;
+  height: 160px;
+  right: -24px;
+  bottom: 40px;
+}
+
+.main-img {
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-image: url(https://github.com/hd1313169/lin/blob/main/app/assets/images/girl.png?raw=true);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .side-btn {
+    width: 200px;
+    height: 200px;
+    left: 40px;
+    bottom: 80px;
+    z-index: 9999;
+  }
+
+  .main-img {
+    display: block;
+  }
+}
+
+.footer-img {
+  width: 200px;
+  height: 200px;
+  background-image: url(https://github.com/hd1313169/lin/blob/main/app/assets/images/girl-3.png?raw=true);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
